@@ -1,0 +1,10 @@
+.header-container {
+    padding-inline: 24px;
+    background-color: #38234ece;
+
+}
+
+.social-icon:hover {
+    /* background-color: #fff; */
+    transform: scale(1.2);
+}
