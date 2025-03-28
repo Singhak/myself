@@ -11,7 +11,7 @@ const Portfolio = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              See <span className="text-primary"> My Works </span>
+              Dive Into<span className="text-primary"> My Works </span>
             </h1>
 
             <p data-aos="fade-up" data-aos-duration="1400">

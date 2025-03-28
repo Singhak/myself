@@ -15,7 +15,7 @@ const Milestone = () => {
           data-aos="fade-up"
           data-aos-duration="1200"
         >
-          Personal<span className="text-primary"> Space </span>
+          See What I&apos;ve<span className="text-primary"> Built </span>
         </h1>
         <div
           className="about-info mb-5"

@@ -1,5 +1,4 @@
 const About = () => {
-  console.log("About");
   return (
     <>
       <div className="container-fluid padding-side text-white">
@@ -48,7 +47,7 @@ const About = () => {
                   </div>
                   <p className="text-uppercase mb-0">years experience</p>
                 </div>
-                <div className="col-lg-3 col-6 ">
+                {/* <div className="col-lg-3 col-6 ">
                   <div className="d-flex align-items-center">
                     <h4
                       className="counter-value text-primary fw-bold display-3 banner-size"
@@ -59,7 +58,7 @@ const About = () => {
                     <span className="text-primary display-5">+</span>
                   </div>
                   <p className="text-uppercase mb-0">Satisfied clients</p>
-                </div>
+                </div> */}
                 <div className="col-lg-3 col-6 ">
                   <div className="d-flex align-items-center">
                     <h4
@@ -70,7 +69,7 @@ const About = () => {
                     </h4>
                     <span className="text-primary display-5">+</span>
                   </div>
-                  <p className="text-uppercase mb-0">Projects done</p>
+                  <p className="text-uppercase mb-0">Projects delivered</p>
                 </div>
               </div>
             </div>
