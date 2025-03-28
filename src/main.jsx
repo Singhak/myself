@@ -16,28 +16,28 @@ import Milestone from "./components/Milestone.jsx";
 // );
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "myself/",
     element: <App />,
     errorElement: <h1>Hi Error hai</h1>,
     children: [
       {
-        path: "/",
+        path: "",
         element: <Home />,
       },
       {
-        path: "/about",
+        path: "about",
         element: <About />,
       },
       {
-        path: "/portfolio",
+        path: "portfolio",
         element: <Portfolio />,
       },
       {
-        path: "/contact",
+        path: "contact",
         element: <Contact />,
       },
       {
-        path: "/milestone",
+        path: "milestone",
         element: <Milestone />,
       },
     ],

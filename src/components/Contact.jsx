@@ -83,13 +83,25 @@ const Contact = () => {
               </li>
               <li>
                 <a
-                  href="mailto:anilsingh.singh09@gmail.com"
+                  href="https://stackoverflow.com/users/2110245/singhak"
                   rel="noreferrer"
                   target="_blank"
                   className="contact-icon"
                 >
                   <svg className="social-icon" width="32" height="32">
                     <use xlinkHref="#material-symbols--mail-outline"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:anilsingh.singh09@gmail.com"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="contact-icon"
+                >
+                  <svg className="social-icon" width="32" height="32">
+                    <use xlinkHref="#stackoverflow"></use>
                   </svg>
                 </a>
               </li>

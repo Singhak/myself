@@ -77,7 +77,7 @@ const Nav = () => {
                   : "nav-link social-icon"
               }
               aria-current="page"
-              to={"/"}
+              to={""}
             >
               <svg width="24" height="24">
                 <use xlinkHref="#home"></use>
@@ -91,7 +91,7 @@ const Nav = () => {
                   ? "nav-link active social-icon"
                   : "nav-link social-icon"
               }
-              to={"/about"}
+              to={"about"}
             >
               <svg width="24" height="24">
                 <use xlinkHref="#person"></use>
@@ -105,7 +105,7 @@ const Nav = () => {
                   ? "nav-link active social-icon"
                   : "nav-link social-icon"
               }
-              to={"/portfolio"}
+              to={"portfolio"}
             >
               <svg width="24" height="24">
                 <use xlinkHref="#layout"></use>
@@ -119,7 +119,7 @@ const Nav = () => {
                   ? "nav-link active social-icon"
                   : "nav-link social-icon"
               }
-              to={"/milestone"}
+              to={"milestone"}
             >
               <svg width="24" height="24">
                 <use xlinkHref="#pajamas--work"></use>
@@ -133,7 +133,7 @@ const Nav = () => {
                   ? "nav-link active social-icon"
                   : "nav-link social-icon"
               }
-              to={"/contact"}
+              to={"contact"}
             >
               <svg width="24" height="24">
                 <use xlinkHref="#contact"></use>
