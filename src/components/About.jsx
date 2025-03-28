@@ -187,7 +187,7 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-                <div
+                {/* <div
                   className="about-info mb-5"
                   data-aos="fade-up"
                   data-aos-duration="1200"
@@ -209,7 +209,7 @@ const About = () => {
                       </p>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
