@@ -457,6 +457,10 @@ a.nav-link:hover {
     display: flex;
     justify-content: space-evenly;
   }
+
+  .h1height {
+    height: 150px;
+  }
 }
 
 

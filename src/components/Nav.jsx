@@ -27,7 +27,7 @@ const Nav = () => {
                     href="mailto:anilsingh.singh09@gmail.com"
                     rel="noreferrer"
                     target="_blank"
-                    className="contact-icon ms-4"
+                    className="contact-icon ms-2 me-2"
                   >
                     <svg className="social-icon" width="32" height="32">
                       <use xlinkHref="#material-symbols--mail-outline"></use>
@@ -39,7 +39,7 @@ const Nav = () => {
                     href="https://github.com/Singhak"
                     rel="noopener noreferrer"
                     target="_blank"
-                    className="contact-icon ms-4"
+                    className="contact-icon ms-2 me-2"
                   >
                     <svg className="social-icon" width="32" height="32">
                       <use xlinkHref="#icon-park-outline--github"></use>
@@ -51,10 +51,23 @@ const Nav = () => {
                     href="https://linkedin.com/in/anilsingh09"
                     rel="noopener noreferrer"
                     target="_blank"
-                    className="contact-icon ms-4 me-3"
+                    className="contact-icon ms-3 me-2"
                   >
                     <svg className="social-icon" width="32" height="32">
                       <use xlinkHref="#teenyicons--linkedin-outline"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    aria-label="Chat on WhatsApp"
+                    href="https://wa.me/919968641965"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="contact-icon ms-2 me-2"
+                  >
+                    <svg className="social-icon" width="32" height="32">
+                      <use xlinkHref="#whatsapp"></use>
                     </svg>
                   </a>
                 </li>

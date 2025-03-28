@@ -111,7 +111,6 @@ const Milestone = () => {
               </div>
               <div
                 className={`${styles.div_container} col-lg-6 mb-3 d-flex flex-column`}
-                onClick={() => openIt("https://storywalla.com/")}
               >
                 <div className="flex-grow-1">
                   <img src={storywala} alt="Image 1" className={styles.image} />

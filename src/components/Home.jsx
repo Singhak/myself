@@ -8,7 +8,7 @@ const Home = () => {
         <div className="row align-items-center">
           <div className="col-lg-10 ms-lg-5">
             <h1
-              className="banner-size fw-medium display-1"
+              className="banner-size fw-medium display-1 h1height"
               data-aos="fade-up"
               data-aos-duration="1600"
             >

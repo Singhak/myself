@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import { Outlet } from "react-router-dom";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
+import ScrollToTop from "./components/ScrollTop";
 
 function App() {
   useEffect(() => {
@@ -16,6 +17,7 @@ function App() {
     <>
       <Nav />
       <section id="hero" className="padding-small position-relative">
+        <ScrollToTop />
         <Outlet />
       </section>
     </>
