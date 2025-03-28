@@ -3,7 +3,7 @@ const About = () => {
     <>
       <div className="container-fluid padding-side text-white">
         <div className="row gap-5 flex-column align-items-center">
-          <div className="col-lg-9">
+          <div className="col-lg-10">
             <h1
               className="banner-size fw-medium display-1"
               data-aos="fade-up"
@@ -186,29 +186,29 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-                {/* <div
+                <div
                   className="about-info mb-5"
                   data-aos="fade-up"
                   data-aos-duration="1200"
                 >
-                  <h3 className="display-3 mb-4">Interest</h3>
+                  <h3 className="display-3 mb-4">Certifications</h3>
                   <div className="row">
                     <div className="col-lg-6 mb-3">
-                      <h4 className="display-6">Photography</h4>
-                      <p>Capturing moments that inspire creativity.</p>
+                      <h4 className="display-6">AZ-900</h4>
+                      {/* <p>Capturing moments that inspire creativity.</p> */}
                     </div>
                     <div className="col-lg-6 mb-3">
-                      <h4 className="display-6">Sketching</h4>
-                      <p>Pen and paper concepts before digital execution.</p>
+                      <h4 className="display-6">AWS CLF-c01</h4>
+                      {/* <p>Pen and paper concepts before digital execution.</p> */}
                     </div>
-                    <div className="col-lg-6 mb-3">
+                    {/* <div className="col-lg-6 mb-3">
                       <h4 className="display-6">Traveling</h4>
                       <p>
                         Exploring cultures and landscapes to fuel design ideas.
                       </p>
-                    </div>
+                    </div> */}
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>

@@ -47,6 +47,10 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "*",
+    element: <Navigate to={"myself/home"} replace={true} />,
+  },
 ]);
 
 const root = createRoot(document.querySelector("#root"));

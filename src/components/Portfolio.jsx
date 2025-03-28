@@ -5,7 +5,7 @@ const Portfolio = () => {
     <>
       <div className="container-fluid padding-side text-white">
         <div className="row flex-column gap-5 align-items-center">
-          <div className="col-lg-9">
+          <div className="col-lg-10">
             <h1
               className="banner-size fw-medium display-1 mb-4"
               data-aos="fade-up"
