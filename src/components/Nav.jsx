@@ -77,7 +77,8 @@ const Nav = () => {
                   : "nav-link social-icon"
               }
               aria-current="page"
-              to={""}
+              to={"home"}
+              exact
             >
               <svg width="24" height="24">
                 <use xlinkHref="#home"></use>

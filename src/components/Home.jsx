@@ -32,7 +32,8 @@ const Home = () => {
               scalable code. Let&apos;s build something amazing together.
             </p>
             <NavLink
-              to={"/portfolio"}
+              to={"../portfolio"}
+              excat
               className="btn rounded-pill button text-white mt-4 position-relative pe-5 btn-outline-secondary"
               data-aos="fade-up"
               data-aos-duration="1600"

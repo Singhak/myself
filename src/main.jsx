@@ -2,7 +2,11 @@ import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 import About from "./components/About.jsx";
 import Portfolio from "./components/Portfolio.jsx";
 import Contact from "./components/Contact.jsx";
@@ -20,8 +24,9 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <h1>Hi Error hai</h1>,
     children: [
+      { index: true, element: <Navigate to={"home"} replace={true} /> },
       {
-        path: "",
+        path: "home",
         element: <Home />,
       },
       {

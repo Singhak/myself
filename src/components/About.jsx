@@ -9,7 +9,7 @@ const About = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              About me <span className="text-primary"> Anil </span>
+              About <span className="text-primary"> me </span>
             </h1>
             <p
               className="fs-4 fst-italic my-4"
