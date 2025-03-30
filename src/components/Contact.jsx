@@ -25,7 +25,7 @@ const Contact = () => {
           >
             <ul className="contact-list">
               <li className="list-item">
-                <svg width="48" height="48">
+                <svg width="32" height="32">
                   <use xlinkHref="#akar-icons--location"></use>
                 </svg>
                 <span className="contact-text place">
@@ -34,7 +34,7 @@ const Contact = () => {
               </li>
 
               <li className="list-item">
-                <svg width="48" height="48">
+                <svg width="32" height="32">
                   <use xlinkHref="#gridicons--phone"></use>
                 </svg>
                 <span className="contact-text phone">
@@ -45,7 +45,7 @@ const Contact = () => {
               </li>
 
               <li className="list-item">
-                <svg className="social-icon" width="48" height="48">
+                <svg className="social-icon" width="32" height="32">
                   <use xlinkHref="#material-symbols--mail-outline"></use>
                 </svg>
                 <span className="contact-text gmail">
@@ -89,7 +89,7 @@ const Contact = () => {
                   className="contact-icon"
                 >
                   <svg className="social-icon" width="32" height="32">
-                    <use xlinkHref="#material-symbols--mail-outline"></use>
+                    <use xlinkHref="#stackoverflow"></use>
                   </svg>
                 </a>
               </li>
@@ -101,7 +101,7 @@ const Contact = () => {
                   className="contact-icon"
                 >
                   <svg className="social-icon" width="32" height="32">
-                    <use xlinkHref="#stackoverflow"></use>
+                    <use xlinkHref="#material-symbols--mail-outline"></use>
                   </svg>
                 </a>
               </li>
