@@ -1,4 +1,4 @@
-import logo from "../assets/images/infinity.png";
+import logo from "../assets/images/trans_logo.png";
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
 
