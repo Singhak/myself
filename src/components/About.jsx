@@ -112,7 +112,7 @@ const About = () => {
                     <div className="col-lg-6 mb-3">
                       <h4 className="display-6">Iris Software, Inc., Noida</h4>
                       <p className="text-primary mb-1">
-                        (Senior Software Engineer)
+                        (Tech Lead)
                       </p>
                       <p className="text-primary mb-1">2022 - Present</p>
                       <p>
