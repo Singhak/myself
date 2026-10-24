@@ -2,7 +2,7 @@ const SKILLS = [
   { title: "Frontend", items: ["React", "Angular", "JavaScript", "TypeScript", "HTML / CSS"] },
   { title: "Backend", items: ["Node.js", "Express", "NestJS", "Loopback", "REST APIs", "Python", "Java"] },
   { title: "Data", items: ["MongoDB", "Firebase"] },
-  { title: "AI & ML", items: ["LLM APIs (Gemini, OpenRouter)", "AI-powered product features", "Prompt engineering", "Claude Code", "Agent skills", "Machine learning (Python)", "ML model deployment (Flask)"] },
+  { title: "AI & ML", items: ["LLM APIs (Gemini, OpenRouter)", "AI-powered product features", "Prompt engineering", "Claude Code", "Google Antigravity", "Agent skills", "Machine learning (Python)", "ML model deployment (Flask)"] },
   { title: "Cloud & DevOps", items: ["Docker", "Jenkins", "Azure", "AWS", "Git"] },
 ];
 
