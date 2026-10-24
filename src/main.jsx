@@ -20,7 +20,7 @@ import Milestone from "./components/Milestone.jsx";
 // );
 const router = createBrowserRouter([
   {
-    path: "myself/",
+    path: "/",
     element: <App />,
     errorElement: <h1>Hi Error hai</h1>,
     children: [
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <Navigate to={"myself/home"} replace={true} />,
+    element: <Navigate to={"/home"} replace={true} />,
   },
 ]);
 

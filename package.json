@@ -3,9 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://singhak.github.io/myself",
+  "homepage": "https://myself.singhak.in",
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && node -e \"require('fs').copyFileSync('dist/index.html','dist/404.html')\"",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
