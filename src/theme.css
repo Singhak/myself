@@ -449,3 +449,15 @@ h4 {
     border-top: 1px solid var(--card-border);
   }
 }
+
+/* Keep the side nav above page content (the hero section is position: relative) */
+nav.navbar-side {
+  z-index: 1040;
+}
+
+@media (min-width: 992px) {
+  nav.navbar-side {
+    right: 1.5rem;
+    padding: 0.5rem;
+  }
+}
