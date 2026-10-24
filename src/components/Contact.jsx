@@ -1,118 +1,76 @@
-import { NavLink } from "react-router-dom";
 import "./Contact.css";
+
+const LINKS = [
+  { label: "Email", value: "anilsingh.singh09@gmail.com", href: "mailto:anilsingh.singh09@gmail.com", icon: "#material-symbols--mail-outline" },
+  { label: "LinkedIn", value: "in/anilsingh09", href: "https://linkedin.com/in/anilsingh09", icon: "#teenyicons--linkedin-outline" },
+  { label: "GitHub", value: "github.com/Singhak", href: "https://github.com/Singhak", icon: "#icon-park-outline--github" },
+  { label: "Stack Overflow", value: "singhak", href: "https://stackoverflow.com/users/2110245/singhak", icon: "#stackoverflow" },
+  { label: "Location", value: "Ghaziabad, Uttar Pradesh, India", icon: "#akar-icons--location" },
+];
+
 const Contact = () => {
   return (
-    <>
-      <div className="container-fluid padding-side text-white">
-        <div className="row flex-column align-items-center">
-          <div>
-            <h1
-              className="banner-size fw-medium display-1 mb-4"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              Let’s work <span className="text-primary">Together</span>
-            </h1>
-            {/* <p data-aos="fade-up" data-aos-duration="1400">
-              Bringing your ideas to life with clean, efficient, and scalable
-              code.{" "}
-            </p> */}
-          </div>
-          <div
-            className="col-lg-9 mt-2"
-            data-aos="fade-up"
-            data-aos-duration="1400"
+    <div className="container-fluid padding-side text-white">
+      <div className="page">
+        <h1 className="page-title" data-aos="fade-up">
+          Let&apos;s build <span className="gradient-text">together</span>
+        </h1>
+        <p className="page-lead" data-aos="fade-up">
+          Hiring a tech lead, or starting something and need someone who can own
+          the engineering? Send me a note. I reply fast.
+        </p>
+
+        <div className="cta-row" data-aos="fade-up">
+          <a href="mailto:anilsingh.singh09@gmail.com" className="cta cta-primary">
+            Email me
+          </a>
+          <a
+            href="https://linkedin.com/in/anilsingh09"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta cta-ghost"
           >
-            <ul className="contact-list">
-              <li className="list-item">
-                <svg width="32" height="32">
-                  <use xlinkHref="#akar-icons--location"></use>
-                </svg>
-                <span className="contact-text place">
-                  Ghaziabad, Uttar Pradesh
-                </span>
-              </li>
-
-              <li className="list-item">
-                <svg width="32" height="32">
-                  <use xlinkHref="#gridicons--phone"></use>
-                </svg>
-                <span className="contact-text phone">
-                  <NavLink href="tel:+91-9968641965" title="Give me a call">
-                    (+91) 9968641965
-                  </NavLink>
-                </span>
-              </li>
-
-              <li className="list-item">
-                <svg className="social-icon" width="32" height="32">
-                  <use xlinkHref="#material-symbols--mail-outline"></use>
-                </svg>
-                <span className="contact-text gmail">
-                  <NavLink href="mailto:#" title="Send me an email">
-                    anilsingh.singh09@gmail.com
-                  </NavLink>
-                </span>
-              </li>
-            </ul>
-            <hr />
-            <ul className="social-media-list">
-              <li>
-                <a
-                  href="https://github.com/Singhak"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="contact-icon"
-                >
-                  <svg className="social-icon" width="32" height="32">
-                    <use xlinkHref="#icon-park-outline--github"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://linkedin.com/in/anilsingh09"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="contact-icon"
-                >
-                  <svg className="social-icon" width="32" height="32">
-                    <use xlinkHref="#teenyicons--linkedin-outline"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://stackoverflow.com/users/2110245/singhak"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="contact-icon"
-                >
-                  <svg className="social-icon" width="32" height="32">
-                    <use xlinkHref="#stackoverflow"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="mailto:anilsingh.singh09@gmail.com"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="contact-icon"
-                >
-                  <svg className="social-icon" width="32" height="32">
-                    <use xlinkHref="#material-symbols--mail-outline"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-            <hr />
-
-            <div className="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
-          </div>
+            Connect on LinkedIn
+          </a>
         </div>
+
+        <div className="card-grid mt-5">
+          {LINKS.map((l) => {
+            const inner = (
+              <>
+                <svg width="30" height="30" className="flex-shrink-0">
+                  <use xlinkHref={l.icon}></use>
+                </svg>
+                <span>
+                  <small>{l.label}</small>
+                  {l.value}
+                </span>
+              </>
+            );
+            return l.href ? (
+              <a
+                key={l.label}
+                href={l.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-card"
+                data-aos="fade-up"
+              >
+                {inner}
+              </a>
+            ) : (
+              <div key={l.label} className="contact-card" data-aos="fade-up">
+                {inner}
+              </div>
+            );
+          })}
+        </div>
+
+        <p className="mt-5" style={{ color: "var(--muted)" }}>
+          &copy; {new Date().getFullYear()} Anil Kumar
+        </p>
       </div>
-    </>
+    </div>
   );
 };
 

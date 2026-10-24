@@ -1,142 +1,103 @@
-import oneStep from "../assets/images/talesoftales.jpg";
 import cflock from "../assets/images/cflock.png";
 import storywala from "../assets/images/storywala.png";
 import singhak from "../assets/images/singhak.jpg";
-import styles from "./Milestone.module.css";
+
+const PRODUCTS = [
+  {
+    title: "Coloro",
+    tag: "Live product · AI",
+    href: "https://coloro.in",
+    text: "Free, ad-free coloring app where kids learn colors, numbers and letters. Generates custom pages with Gemini AI, color-by-number, photo-to-sketch and printable PDFs.",
+  },
+  {
+    title: "LabelCutter",
+    tag: "Live product · Ecommerce tool",
+    href: "https://labelcutter.in",
+    text: "Crops Flipkart, Amazon and Meesho A4 label PDFs into 4x6 thermal-printer labels with SKU extraction. Runs entirely in the browser, so files never leave the seller's device.",
+  },
+  {
+    title: "SheetDXF",
+    tag: "Live product · Manufacturing",
+    href: "https://sheetdxf.com",
+    text: "Instant laser-cutting quotes in the browser: drop a DXF and get cut length, pierces and scrap yield, then export a PDF quote.",
+  },
+  {
+    title: "ClipDesk",
+    tag: "Open source · Creator tool",
+    href: "https://clipdesk.infynetic.com",
+    text: "Screen recorder that turns 16:9 activity into vertical 9:16 videos for Reels, Shorts and TikTok, with auto cursor follow, click zoom and captions.",
+  },
+  {
+    title: "IMONBENCH",
+    tag: "Live product · AI",
+    href: "https://imonbench.in",
+    text: "AI-powered interview practice platform for developers preparing for technical interviews.",
+  },
+  {
+    title: "Clinic management app",
+    tag: "Angular · Firebase",
+    img: cflock,
+    href: "https://oursolutioncafe.web.app/",
+    text: "Helps doctors run clinics across multiple locations: patient and employee records, and prescriptions straight from the app.",
+  },
+  {
+    title: "Storywalla",
+    tag: "Angular · Firebase",
+    img: storywala,
+    href: "https://storywalla.com/",
+    text: "A story-sharing site where writers publish and readers engage with literary content.",
+  },
+  {
+    title: "singhak.in",
+    tag: "Technical blog",
+    img: singhak,
+    href: "https://singhak.in",
+    text: "My engineering notebook. Whenever I solve a tricky problem or learn something worth keeping, I write it up here.",
+  },
+  {
+    title: "nodeui",
+    tag: "Open source · TypeScript",
+    href: "https://github.com/Singhak/nodeui",
+    text: "Embedded, local-only developer console for Node.js apps: runtime observability for Express and NestJS.",
+  },
+  {
+    title: "dev-skills",
+    tag: "Open source · Shell",
+    href: "https://github.com/Singhak/dev-skills",
+    text: "Six agent skills that make a coding agent work like a senior fullstack engineer: TDD, security on every change, evidence-based reports.",
+  },
+];
+
 const Milestone = () => {
-  function openIt(link) {
-    window.open(link, "_blank");
-  }
   return (
-    <div className="container-fluid padding-side text-white col-lg-9">
-      <div className="row flex-column align-items-center">
-        <h1
-          className="banner-size fw-medium display-3 mb-3 mt-3"
-          data-aos="fade-up"
-          data-aos-duration="1200"
-        >
-          Explore What I&apos;ve
-          <span className="text-primary"> Created </span>
+    <div className="container-fluid padding-side text-white">
+      <div className="page">
+        <h1 className="page-title" data-aos="fade-up">
+          Things I&apos;ve <span className="gradient-text">built</span>
         </h1>
-        <div
-          className="about-info mb-5"
-          data-aos="fade-up"
-          data-aos-duration="1200"
-        >
-          <div className="row">
-            {/* First Card */}
-            <div
-              className={`${styles.div_container} col-lg-6 mb-3 d-flex flex-column`}
-            >
-              <div className="flex-grow-1">
-                <img src={cflock} alt="Image 1" className={styles.image} />
-                <p className="m-3">
-                  An Angular and Firebase-based application designed for doctors
-                  to manage clinics across multiple locations. It allows doctors
-                  to manage patient and employee records, create and delete
-                  records, and prescribe medications directly through the app.
-                </p>
-              </div>
-              <div
-                className="btn rounded-pill button text-white p-2 btn-outline-secondary d-flex align-items-center justify-content-center"
-                onClick={() => openIt("https://oursolutioncafe.web.app/")}
-              >
-                <span> Explore </span>
-                <svg
-                  className="arrow-right text-white p-1"
-                  width="28"
-                  height="28"
-                >
-                  <use xlinkHref="#arrow-right"></use>
-                </svg>
-              </div>
-            </div>
+        <p className="page-lead" data-aos="fade-up">
+          Beyond my day job, I build and ship products end to end: design, code, deploy, and run.
+        </p>
 
-            {/* Second Card */}
-            <div
-              className={`${styles.div_container} col-lg-6 mb-3 d-flex flex-column`}
+        <div className="card-grid mt-5">
+          {PRODUCTS.map((p) => (
+            <a
+              key={p.title}
+              href={p.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-card"
+              data-aos="fade-up"
             >
-              <div className="flex-grow-1">
-                <img src={singhak} alt="Image 1" className={styles.image} />
-                <p className="m-3">
-                  This is my personal technical blog where I share insights from
-                  my learning and experiences. Whenever I discover something
-                  valuable or solve a programming issue, I document it here to
-                  assist others and maintain a record of my solutions.
-                </p>
-              </div>
-              <div
-                className="btn rounded-pill button text-white p-2 btn-outline-secondary d-flex align-items-center justify-content-center"
-                onClick={() => openIt("https://singhak.in")}
-              >
-                <span> Explore </span>
-                <svg
-                  className="arrow-right text-white p-1"
-                  width="28"
-                  height="28"
-                >
-                  <use xlinkHref="#arrow-right"></use>
-                </svg>
-              </div>
-            </div>
-          </div>
-
-          <div data-aos="fade-up" data-aos-duration="1200">
-            <div className="row">
-              <div
-                className={`${styles.div_container} col-lg-6 mb-3 d-flex flex-column`}
-              >
-                <div className="flex-grow-1">
-                  <img src={oneStep} alt="Image 1" className={styles.image} />
-                  <p className="m-3">
-                    This Angular and Firebase-based application is designed for
-                    writers and readers to share and engage with literary
-                    content. Users can write and publish poems or stories,
-                    explore works by others, and provide comments and feedback.
-                  </p>
-                </div>
-                <div
-                  className="btn rounded-pill button text-white p-2 btn-outline-secondary d-flex align-items-center justify-content-center"
-                  onClick={() => openIt("https://talesoftales.com/")}
-                >
-                  <span> Explore </span>
-                  <svg
-                    className="arrow-right text-white p-1"
-                    width="28"
-                    height="28"
-                  >
-                    <use xlinkHref="#arrow-right"></use>
-                  </svg>
-                </div>
-              </div>
-              <div
-                className={`${styles.div_container} col-lg-6 mb-3 d-flex flex-column`}
-              >
-                <div className="flex-grow-1">
-                  <img src={storywala} alt="Image 1" className={styles.image} />
-                  <p className="m-3">
-                    I This Angular and Firebase-based application is designed
-                    for writers and readers to share and engage with literary
-                    content. Users can write and publish poems or stories,
-                    explore works by others, and provide comments and feedback.
-                  </p>
-                </div>
-                <div
-                  className="btn rounded-pill button text-white p-2 btn-outline-secondary d-flex align-items-center justify-content-center"
-                  onClick={() => openIt("https://storywalla.com/")}
-                >
-                  <span> Explore </span>
-                  <svg
-                    className="arrow-right text-white p-1"
-                    width="28"
-                    height="28"
-                  >
-                    <use xlinkHref="#arrow-right"></use>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
+              {p.img && (
+                <img src={p.img} alt={`${p.title} logo`} className="card-thumb" />
+              )}
+              <span className="card-tag">{p.tag}</span>
+              <h3>{p.title}</h3>
+              <p>{p.text}</p>
+              <span className="card-link">Visit →</span>
+            </a>
+          ))}
         </div>
       </div>
     </div>
