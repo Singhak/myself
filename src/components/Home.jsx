@@ -50,6 +50,7 @@ const Home = () => {
               strings={[
                 "Tech Lead @ Iris Software",
                 "Full Stack: Node.js, React, Angular",
+                "Building AI-powered products",
                 "I take ideas from zero to production",
               ]}
               typeSpeed={50}
