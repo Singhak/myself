@@ -5,6 +5,7 @@ import coloro from "../assets/images/coloro.svg";
 import labelcutter from "../assets/images/labelcutter.svg";
 import sheetdxf from "../assets/images/sheetdxf.svg";
 import clipdesk from "../assets/images/clipdesk.svg";
+import nodeui from "../assets/images/nodeui.svg";
 import imonbench from "../assets/images/imonbench.svg";
 
 const PRODUCTS = [
@@ -67,6 +68,7 @@ const PRODUCTS = [
   {
     title: "nodeui",
     tag: "Open source · TypeScript",
+    img: nodeui,
     href: "https://github.com/Singhak/nodeui",
     text: "Embedded, local-only developer console for Node.js apps: runtime observability for Express and NestJS.",
   },
