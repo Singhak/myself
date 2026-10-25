@@ -1,0 +1,165 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Rich Royal Blue App Tile Canvas -->
+    <linearGradient id="cf-tile-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="50%" stop-color="#1D4ED8" />
+      <stop offset="100%" stop-color="#1E40AF" />
+    </linearGradient>
+
+    <!-- Squircle Border Highlight -->
+    <linearGradient id="cf-tile-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#1E3A8A" stop-opacity="0.4" />
+    </linearGradient>
+
+    <!-- Thermal Label Ambient Glow -->
+    <filter id="cf-ambient-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#60A5FA" flood-opacity="0.65" />
+    </filter>
+
+    <!-- Top Label Surface (Thermal White) -->
+    <linearGradient id="cf-top-surf" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F1F5F9" />
+    </linearGradient>
+
+    <!-- Bottom Invoice Slip Surface (Frosted Blue) -->
+    <linearGradient id="cf-bot-surf" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+
+    <!-- Golden Amber Badge Dot -->
+    <linearGradient id="cf-badge-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+
+    <!-- Scissor Blades (Sharpened Precision Steel with Electric Cyan Laser Edge) -->
+    <linearGradient id="cf-blade-upper-grad" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="35%" stop-color="#00E5FF" />
+      <stop offset="75%" stop-color="#BAE6FD" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+
+    <linearGradient id="cf-blade-lower-grad" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E40AF" />
+      <stop offset="35%" stop-color="#0284C7" />
+      <stop offset="75%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+
+    <!-- Scissors Handles (Vibrant Contrast Orange with White Outline) -->
+    <linearGradient id="cf-handle-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9400" />
+      <stop offset="50%" stop-color="#FF6B00" />
+      <stop offset="100%" stop-color="#EA580C" />
+    </linearGradient>
+
+    <filter id="cf-scissor-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2.5" stdDeviation="2.5" flood-color="#0F172A" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- 1. VIBRANT ROYAL BLUE SQUIRCLE TILE -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#cf-tile-bg)" stroke="url(#cf-tile-border)" stroke-width="1.2" />
+
+
+  <!-- 3. TOP THERMAL SHIPPING LABEL (With Ambient Glow & Feed Notches) -->
+  <g filter="url(#cf-ambient-glow)">
+    <!-- Label Body with Rounded Top & Bottom Feed Notches -->
+    <path d="M 17 11 
+             C 15.5 11 14.5 12 14.5 13.5 
+             V 25.5 
+             C 16 25.5 17 26.5 17 28 
+             C 17 29 16 30 14.5 30 
+             H 49.5 
+             C 48 30 47 29 47 28 
+             C 47 26.5 48 25.5 49.5 25.5 
+             V 13.5 
+             C 49.5 12 48.5 11 47 11 
+             Z" 
+          fill="url(#cf-top-surf)" 
+          stroke="rgba(255, 255, 255, 0.95)" 
+          stroke-width="0.8" />
+
+    <!-- High-Contrast Scannable Barcode Stripes -->
+    <g transform="translate(18, 14.5)">
+      <rect x="0" y="0" width="2" height="7.5" rx="0.4" fill="#0F172A" />
+      <rect x="3.2" y="0" width="1.2" height="7.5" rx="0.3" fill="#0F172A" />
+      <rect x="5.6" y="0" width="3" height="7.5" rx="0.4" fill="#0F172A" />
+      <rect x="10" y="0" width="1.2" height="7.5" rx="0.3" fill="#0F172A" />
+      <rect x="12.4" y="0" width="2.4" height="7.5" rx="0.4" fill="#0F172A" />
+      <rect x="16" y="0" width="1.4" height="7.5" rx="0.3" fill="#0F172A" />
+      <rect x="18.6" y="0" width="3.2" height="7.5" rx="0.4" fill="#0F172A" />
+      <rect x="23" y="0" width="1.2" height="7.5" rx="0.3" fill="#0F172A" />
+      <rect x="25.4" y="0" width="2.4" height="7.5" rx="0.4" fill="#0F172A" />
+    </g>
+
+    <!-- Sub-Data Pill Blocks -->
+    <rect x="18" y="24" width="12" height="2" rx="1" fill="#475569" />
+    <rect x="32" y="24" width="10" height="2" rx="1" fill="#0284C7" />
+  </g>
+
+  <!-- 4. BOTTOM INVOICE SLIP (Frosted Blue with White Lines & Amber Badge) -->
+  <g>
+    <!-- Invoice Card Body -->
+    <rect x="14.5" y="33" width="35" height="17" rx="4" 
+          fill="url(#cf-bot-surf)" 
+          stroke="rgba(255, 255, 255, 0.4)" 
+          stroke-width="0.8" />
+
+    <!-- Invoice Details Lines -->
+    <line x1="18.5" y1="38.5" x2="35" y2="38.5" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" />
+    <line x1="18.5" y1="43" x2="29" y2="43" stroke="rgba(255, 255, 255, 0.85)" stroke-width="1.6" stroke-linecap="round" />
+
+    <!-- Golden Amber Amount Badge -->
+    <circle cx="43" cy="41" r="2.8" fill="url(#cf-badge-amber)" />
+  </g>
+
+  <!-- 5. SCISSORS CUTTING ACROSS BETWEEN LABEL AND INVOICE (Electric Cyan Laser Outlines) -->
+  <g filter="url(#cf-scissor-shadow)" id="scissors">
+    <!-- UPPER BLADE -->
+    <path d="M 41 31 L 15 23 C 14.2 22.5 14.8 21.5 15.8 21.8 L 41 28 Z" 
+          fill="url(#cf-blade-upper-grad)" 
+          stroke="#00E5FF" 
+          stroke-width="1.6" 
+          stroke-linejoin="round" />
+    <line x1="41" y1="31" x2="15" y2="23" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" />
+
+    <!-- LOWER BLADE -->
+    <path d="M 41 31 L 15 39 C 14.2 39.5 14.8 40.5 15.8 40.2 L 41 34 Z" 
+          fill="url(#cf-blade-lower-grad)" 
+          stroke="#00E5FF" 
+          stroke-width="1.6" 
+          stroke-linejoin="round" />
+    <line x1="41" y1="31" x2="15" y2="39" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" />
+
+    <!-- UPPER HANDLE -->
+    <g>
+      <path d="M 41 28.5 C 42 25.5 43.5 22.5 47 20.5 C 51 18.5 56 20.5 57 25 C 58 29.5 54 32.5 49.5 31.5 C 46 30.5 43.5 30 41 28.5 Z" 
+            fill="url(#cf-handle-orange)" 
+            stroke="#00E5FF" 
+            stroke-width="1.8" 
+            stroke-linejoin="round" />
+      <ellipse cx="50.5" cy="25.5" rx="3.8" ry="2.4" transform="rotate(-25 50.5 25.5)" fill="#1D4ED8" stroke="#00E5FF" stroke-width="1.0" />
+    </g>
+
+    <!-- LOWER HANDLE -->
+    <g>
+      <path d="M 41 31.5 C 42 34.5 43.5 37.5 46.5 40.5 C 50.5 43.5 55.5 42 56.5 37.5 C 57.5 33 53.5 30.5 49 31 C 46 31.5 43.5 31.5 41 31.5 Z" 
+            fill="url(#cf-handle-orange)" 
+            stroke="#00E5FF" 
+            stroke-width="1.8" 
+            stroke-linejoin="round" />
+      <ellipse cx="50" cy="36.5" rx="3.8" ry="2.4" transform="rotate(30 50 36.5)" fill="#1D4ED8" stroke="#00E5FF" stroke-width="1.0" />
+    </g>
+
+    <!-- CENTRAL PIVOT RIVET -->
+    <circle cx="41" cy="31" r="3.6" fill="#00F2FE" stroke="#00E5FF" stroke-width="1.4" />
+    <circle cx="41" cy="31" r="2.2" fill="#0F172A" />
+    <circle cx="41" cy="31" r="1.1" fill="#FFFFFF" />
+  </g>
+</svg>
