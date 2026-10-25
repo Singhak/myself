@@ -13,7 +13,19 @@ html {
 
 body {
   min-height: 100vh;
-  background-attachment: fixed;
+  background-image: none;
+  background-color: #180e1e;
+}
+
+/* Fixed layer on its own GPU layer instead of background-attachment: fixed (repaints on scroll) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: radial-gradient(#2d273b, #180e1e);
+  pointer-events: none;
+  transform: translateZ(0);
 }
 
 h1,
@@ -162,7 +174,6 @@ h4 {
   border: 1px solid var(--card-border);
   border-radius: 16px;
   background: var(--card-bg);
-  backdrop-filter: blur(6px);
 }
 
 .stat-value {
@@ -212,7 +223,6 @@ h4 {
   border: 1px solid var(--card-border);
   border-radius: 18px;
   background: var(--card-bg);
-  backdrop-filter: blur(6px);
   transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
 }
 
@@ -421,8 +431,11 @@ h4 {
   opacity: 0.85;
 }
 
-.navbar-side .nav-link.active {
+.navbar-side .nav-link.active,
+.navbar-side .nav-link:hover,
+.navbar-side .nav-link:focus {
   opacity: 1;
+  color: var(--accent);
 }
 
 @media (min-width: 992px) {

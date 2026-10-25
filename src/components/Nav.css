@@ -1,13 +1,11 @@
 .site-header {
     z-index: 1030;
     padding: 0.9rem 0;
-    transition: background 0.3s, padding 0.3s, box-shadow 0.3s, backdrop-filter 0.3s;
+    transition: background 0.3s, box-shadow 0.3s;
 }
 
 .site-header.is-scrolled {
-    padding: 0.45rem 0;
-    background: rgba(24, 14, 30, 0.82);
-    backdrop-filter: blur(12px);
+    background: rgba(24, 14, 30, 0.94);
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.08), 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
